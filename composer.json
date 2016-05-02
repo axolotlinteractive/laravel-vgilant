@@ -1,0 +1,15 @@
+{
+  "name" : "axolotlinteractive/laravel-vigilant",
+  "description" : "Laravel Plugin For Keeping Tokens refreshed",
+  "keywords" : ["laravel"],
+  "license" : "MIT",
+  "authors" : [
+    {
+      "name" : "Bryce Meyer",
+      "email" : "bryce@axolotlinteractive.com"
+    }
+  ],
+  "require" : {
+    "php" : "5.5.9"
+  }
+}
