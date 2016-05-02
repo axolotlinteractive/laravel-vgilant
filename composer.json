@@ -9,7 +9,13 @@
       "email" : "bryce@axolotlinteractive.com"
     }
   ],
+  "autoload" : {
+    "psr-4": {
+      "AxolotlInteractive\\Laravel\\Vigilant": "src/"
+    }
+  },
   "require" : {
-    "php" : "5.5.9"
+    "php" : "5.5.9",
+    "laravel/framework": "5.2.*"
   }
 }
