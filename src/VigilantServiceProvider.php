@@ -1,4 +1,6 @@
 <?php
+namespace AxolotlInteractive\Laravel\Vigilant;
+
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -8,8 +10,14 @@ use Illuminate\Support\ServiceProvider;
  * Time: 4:56 PM
  */
 
-class LaravelVigilantServiceProvider extends ServiceProvider
+class VigilantServiceProvider extends ServiceProvider
 {
+
+
+    public function boot()
+    {
+        $this->publishes([__DIR__ . '/../config/config.php' => config_path('vigilant.php')], 'vigilant');
+    }
 
     /**
      * Register the service provider.
